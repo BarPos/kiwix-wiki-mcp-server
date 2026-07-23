@@ -57,6 +57,8 @@ Or run directly:
 node build/main.js
 ```
 
+The MCP server is served over HTTP (Streamable HTTP transport) at `http://localhost:8082/mcp`.
+
 ### Available Tools
 
 #### 1. `search_wiki`
@@ -108,12 +110,13 @@ By default, the server connects to Kiwix at `http://localhost:8080`. You can mod
 
 Add this to your MCP client configuration:
 
+Start the server (`npm start`), then point your MCP client at the HTTP endpoint:
+
 ```json
 {
   "mcpServers": {
     "kiwix-wiki": {
-      "command": "node",
-      "args": ["/path/to/your/project/build/main.js"]
+      "url": "http://localhost:8082/mcp"
     }
   }
 }
