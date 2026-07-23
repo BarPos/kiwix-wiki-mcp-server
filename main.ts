@@ -2,7 +2,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 
-const KIWIX_SERVER_BASE = "http://localhost:8080"; // Default Kiwix server URL
+const KIWIX_SERVER_BASE = "http://localhost:8081"; // Default Kiwix server URL
 const USER_AGENT = "kiwix-mcp-server/1.0";
 
 // Create server instance
